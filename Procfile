@@ -1,0 +1,1 @@
+web: gunicorn dewaste.wsgi --log-file -
