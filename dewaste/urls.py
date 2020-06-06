@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('dewaste/', include('dewasteapp.urls')),
+    path('', include('dewasteapp.urls')),
+    # path('maps', include('dewasteapp.urls')),
     path('admin/', admin.site.urls),
 ]
