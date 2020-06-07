@@ -59,9 +59,10 @@
         </li> -->
       </ul>
       
-      <div>
-        <a class="nav-link" style="color: white;" href="{% url 'survey' %}" tabindex="-1" aria-disabled="true">Fill survey</a>
-    </div>
+      <ul class="navbar-nav">
+        <li><a class="nav-link" style="color: white;" href="{% url 'survey' %}" tabindex="-1" aria-disabled="true">Fill survey</a></li>
+        <li><a class="nav-link" style="color: white;" href="{% url 'aboutus' %}" tabindex="-1" aria-disabled="true">About us</a></li>
+      </ul>
     </div>
   </nav>
 
@@ -90,11 +91,11 @@
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Locate bhangarwalas near you</h2>
               <p class="animate__animated animate__fadeInUp">Bhangarwalas have a very strong (profit first) network of waste recycling. Since E-waste has to recyled and not thrown away, it holds a strong value to bhangarwalas</p>
-              <a href="{% url 'maps' %}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              <a href="{% url 'maps' %}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Locate bhangarwalas</a>
             </div>
           </div>
         </div>
-
+      </li>
         <!-- Slide 3 -->
         <!-- <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/slide-3.jpg' %})">
           <div class="carousel-container">
@@ -159,7 +160,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>About Us</h2>
+          <h2>What is E-waste</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
@@ -194,7 +195,7 @@
       <div class="container">
 
         <div class="section-title">
-            <h2>Statistics from surveying 500 households</h2>
+            <h2>Statistics from surveying 500+ households</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
           </div>
 
@@ -234,6 +235,23 @@
 
       </div>
     </section><!-- End Why Us Section -->
+
+    <!-- ======= Cta Section ======= -->
+  <section id="cta" class="cta">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-9 text-center text-lg-left">
+          <h3>Have you filled our survey yet!</h3>
+          <p>Filling a small survey would be a contribution towards designing a solution to mitigate the e waste epidemic. Do we want another 2020 of e waste? Fill the form and help us develop a solution</p>
+        </div>
+        <div class="col-lg-3 cta-btn-container text-center">
+          <a class="cta-btn align-middle" href="{% url 'survey' %}">Let's fill the survey</a>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Cta Section -->  
 
     <!-- ======= Our Clients Section ======= -->
     <section id="clients" class="clients">
