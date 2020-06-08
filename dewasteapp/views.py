@@ -35,3 +35,11 @@ def aboutus(request):
         'latest_question_list': 'latest_question_list',
     }
     return HttpResponse(template.render(context, request))
+
+def surveyres(request):
+    # latest_question_list = Question.objects.order_by('-pub_date')[:5]
+    template = loader.get_template('surveyres.html')
+    context = {
+        'latest_question_list': 'latest_question_list',
+    }
+    return HttpResponse(template.render(context, request))
