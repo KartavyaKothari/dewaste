@@ -38,7 +38,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'b7^n@)v1_#&pk25p05u0ilz8=l@g0l&4h91+j#__v4&*@gk5o0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 
 ALLOWED_HOSTS = ['dewasteapp.herokuapp.com',"127.0.0.1"]
 
